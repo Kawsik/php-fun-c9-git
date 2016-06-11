@@ -1,51 +1,83 @@
 <?php
-
-// check if it is Febonacchi or not hello
+// Febonacchi : CHECK *************************
+/*
     $ha_ha = 144;
     $aa = 1;
     $bb = 1;
     $cc = $aa + $bb;
-    // echo $aa.", ";
-    // echo $bb.", ";
     while($cc <= $ha_ha){
-        // echo $cc.", ";
         $aa = $bb;
         $bb = $cc;
         $cc = $aa + $bb;
     }
     if($bb == $ha_ha){
-        echo "Wow, {$bb} is a Febonacchi Number. Your Wife is Beautiful";
+        echo "YES, {$bb} is a Febonacchi Number.";
     }else{
-        echo "Oops, not Febonacchi. Your Wife is Dead.";
-    }
+        echo "NO, {$bb} is not a  Febonacchi Number.";
+    } 
+*/
+// *******************************************
 
 
-
-// Find Out the Febonacchi number
+// Febonacchi : Find 0 to your input *********
 /*
-    $ha_ha = 10000000000000;
+    $ha_ha = 1000; // your input
     $aa = 1;
     $bb = 1;
     $cc = $aa + $bb;
+    echo "Febonacchi Nubmers From 0 to {$ha_ha} :<br>";
     echo $aa.", ";
     echo $bb.", ";
     while($cc <= $ha_ha){
-        echo $cc.", ";
+        echo $cc;
         $aa = $bb;
         $bb = $cc;
         $cc = $aa + $bb;
+        if($cc > $ha_ha){
+            echo ".";
+        }else{
+            echo ", ";
+        }
     }
-
 */
+// *******************************************
+// Febonacchi : Find 0 to your input ********* array output
+/*
+    $ha_ha = 1000; // your input
+                            $chi = array("Start From Here");
+    $aa = 1;
+    $bb = 1;
+    $cc = $aa + $bb;
+    echo "Febonacchi Nubmers From 0 to {$ha_ha} :<br>";
+    echo $aa.", ";          $chi[] = $aa;
+    echo $bb.", ";          $chi[] = $bb;
+    while($cc <= $ha_ha){
+        echo $cc;           $chi[] = $cc;
+        $aa = $bb;
+        $bb = $cc;
+        $cc = $aa + $bb;
+        if($cc > $ha_ha){
+            echo ".";
+        }else{
+            echo ", ";
+        }
+    }
+    echo "<hr><br>Showing in an array:<br>";
+    echo "<pre>";    
+                            print_r($chi); 
+    echo "</pre><hr>";
+*/
+// *******************************************
 
-    //   $b=1; $c= 1;
-      
-    //   for($a=1; $a <= 1000; $a=$b){
-    //     $b=$c;
-    //     $c  = $a + $b;
-    //     echo $c.", ";
-
-    //     }
+    $ibn = 100;
+    echo "Febonacchi Nubmers From 0 to {$ibn} :<br>";
+    $b = 1; $c = 1;
+    echo "{$b}, {$c}, ";
+    for($a = 1; $a <= $ibn; $a=$b){
+        $b = $c;
+        $c = $a + $b;
+        echo $c.", ";
+    }
 
 
 
