@@ -1,6 +1,6 @@
 <?php
 // Febonacchi : CHECK *************************
-/*
+
     $ha_ha = 144;
     $aa = 1;
     $bb = 1;
@@ -15,7 +15,7 @@
     }else{
         echo "NO, {$bb} is not a  Febonacchi Number.";
     } 
-*/
+
 // *******************************************
 
 
