@@ -74,7 +74,7 @@
 
 
 
-// Febonacchi : Find 0 to your input $ibn *************
+// Febonacchi : Find 0 to your input $ibn ******** given by Muntasir *** edited by me
 /*
     $ibn = 100;
     echo "Febonacchi Nubmers From 0 to {$ibn} :<br>";
@@ -91,7 +91,7 @@
 // ****************************************************
 
 
-// Febonacchi : Find 0 to your input $ibn ************* array output
+// Febonacchi : Find 0 to your input $ibn ************* array output **** given by Muntasir *** edited by me
 /*
     $abc=array("Start");
     $b=1;
@@ -109,7 +109,7 @@
 // ******************************************************
 
 
-// Febonacchi : Find 0 to your input $ibn ************* array output
+// Febonacchi : Find 0 to your input $ibn ************* array output **** given by Muntasir *** edited by me
 /*
     $check_num = 99;
     $abc=array("Start");
