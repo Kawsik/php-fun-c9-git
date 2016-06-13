@@ -76,9 +76,8 @@
     for($a = 1; $a <= $ibn; $a=$b){
         $b = $c;
         $c = $a + $b;
-        if($c > $ibn){$g = ". "; break;}else{$g = ", ";}
         if($c <= $ibn){
-            echo "{$c}{$g}";
+            echo "{$c}, ";
         }
     }
 
