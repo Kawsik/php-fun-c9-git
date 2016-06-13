@@ -41,6 +41,9 @@
     }
 */
 // *******************************************
+
+
+
 // Febonacchi : Find 0 to your input ********* array output
 /*
     $ha_ha = 1000; // your input
@@ -69,6 +72,10 @@
 */
 // *******************************************
 
+
+
+// Febonacchi : Find 0 to your input $ibn *************
+/*
     $ibn = 100;
     echo "Febonacchi Nubmers From 0 to {$ibn} :<br>";
     $b = 1; $c = 1;
@@ -80,48 +87,51 @@
             echo "{$c}, ";
         }
     }
-
-
-
-/*
-
-
-$abc=array("Start");
-$b=1;
-$c=1;
-for($a=1; $a <= 10000; $a=$b){ 
-    $b=$c; 
-    $c = $a + $b; 
-    // echo "{$c}<br />"; 
-    $abc[] = $c;
-}
-echo "<pre>";
-print_r($abc);
-echo "</pre>";
-
 */
+// ****************************************************
 
 
+// Febonacchi : Find 0 to your input $ibn ************* array output
 /*
-$check_num = 99;
-$abc=array("Start");
-$b=1;
-$c=1;
-for($a=1; $a <= 100; $a=$b){ 
-    $b=$c; 
-    $c = $a + $b; 
-    // echo "{$c}<br />"; 
-    $abc[] = $c;
-}
-echo "<pre>";
-print_r($abc);
-echo "</pre>";
-$temp = in_array($check_num, $abc);
-if($temp == true){
-    echo "Congratulations";
-}else{
-    echo "Your Wife is Dead";
-}
+    $abc=array("Start");
+    $b=1;
+    $c=1;
+    for($a=1; $a <= 10000; $a=$b){ 
+        $b=$c; 
+        $c = $a + $b; 
+        // echo "{$c}<br />"; 
+        $abc[] = $c;
+    }
+    echo "<pre>";
+    print_r($abc);
+    echo "</pre>";
 */
+// ******************************************************
+
+
+// Febonacchi : Find 0 to your input $ibn ************* array output
+/*
+    $check_num = 99;
+    $abc=array("Start");
+    $b=1;
+    $c=1;
+    for($a=1; $a <= 100; $a=$b){ 
+        $b=$c; 
+        $c = $a + $b; 
+        // echo "{$c}<br />"; 
+        $abc[] = $c;
+    }
+    echo "<pre>";
+    print_r($abc);
+    echo "</pre>";
+    $temp = in_array($check_num, $abc);
+    if($temp == true){
+        echo "Congratulations";
+    }else{
+        echo "Your Wife is Dead";
+    }
+*/
+// ******************************************************
+
 
 ?>
