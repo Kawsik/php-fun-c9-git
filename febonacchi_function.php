@@ -18,9 +18,6 @@
     // $result2 = add(4,$result1);
     // echo $result2;
     
-   
-    
-    
     
     function febonacchi($ha_ha){
         $aa = 1;
