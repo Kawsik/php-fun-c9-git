@@ -40,7 +40,8 @@
         }
         return array($yah, $nop, $aa, $bb, $cc);
     }
-    $calling = febonacchi(149);
+    $calling = febonacchi(144);    
+        echo "<br>";
         echo $calling[0];  
         echo "<br>";
         echo $calling[1];       
@@ -49,8 +50,10 @@
         echo "<br>";
         echo $calling[3];      
         echo "<br>";
-        echo $calling[4];
-    list($yah, $nop, $aa, $bb, $cc) = febonacchi(149);
+        echo $calling[4];    
+        echo "<br>";
+    list($yah, $nop, $aa, $bb, $cc) = febonacchi(100);    
+        echo "<br>";
         echo $yah;  
         echo "<br>";
         echo $nop;       
@@ -61,14 +64,5 @@
         echo "<br>";
         echo $cc;
 
-
-    
-    
-    
-    
-    
-    
-    
-    
     
 ?>
