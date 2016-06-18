@@ -38,16 +38,28 @@
         }else{
             $nop = "NO, {$ha_ha} is not a  Febonacchi Number.";
         }
-        // return $yah;
-        // return $nop;
-        return array($yah, $nop);
-        // return $aa;
-        // return $bb;
-        // return $cc;
+        return array($yah, $nop, $aa, $bb, $cc);
     }
-    $calling = febonacchi(145);
-        echo $calling[0];        
-        echo $calling[1];
+    $calling = febonacchi(149);
+        echo $calling[0];  
+        echo "<br>";
+        echo $calling[1];       
+        echo "<br>";
+        echo $calling[2];      
+        echo "<br>";
+        echo $calling[3];      
+        echo "<br>";
+        echo $calling[4];
+    list($yah, $nop, $aa, $bb, $cc) = febonacchi(149);
+        echo $yah;  
+        echo "<br>";
+        echo $nop;       
+        echo "<br>";
+        echo $aa;      
+        echo "<br>";
+        echo $bb;      
+        echo "<br>";
+        echo $cc;
 
 
     
