@@ -10,58 +10,35 @@
         h2{font-size:1em;}
     </style>
 </head>
-<body> <div class="container">
-
-
-
-
-
-<?php    
-function check_point($check_pass = "", $errors = array()){
-    // $check_it = "a";
-    if(!isset($check_pass) || empty($check_pass)){
-        $errors["Blank check"] = "Data field cann't be blank.";
+<body> <div class="jumbotron">
+<?php
+$pass = "fs2fsd2@f1sd2f";
+    function blank_check($value){
+        return isset($value) && !empty($value);
     }
-    // $check_it = "royroy";
-    $needed = 6;
-    if(strlen($check_pass) < $needed){
-        $errors["Minimum Length check"] = "Please Insert More then six charecters.";
+    function length_check($value){
+        return strlen($value) > 6;
     }
-    // $check_it = "dsfsd";
-    if(!is_string($check_pass)){
-        $errors["String check"] = "Field must have alphabetical charecters.";
+    function string_check($value){
+        return is_string($value);
     }
-    // $check_it = 1273;
-    $matching = array("123", "4", "1111");
-    if(in_array($check_pass, $matching)){
-        $errors["Matching or not"] = "Your inserted data nust not have any of these: '123', '4', '1111'.";
+    function matching_check($value){
+        return !in_array($value, array("123", "4", "1111", "123456789"));
     }
-    if(!empty($errors)){
-        echo "Oops";
-    }else{
-        echo "Seccess";
-        $aaa = $check_pass;
-        echo "<br>".$aaa;
+    function special_char($value){
+        return strstr($value, "@") || strstr($value, "^") || strstr($value, "%") || strstr($value, "&");
     }
-}
-// $check_email = "habijabi@lala.com";
-// if(!preg_match("/@/", "$check_email")){
-//     $errors["Special Charecters check"] = "Your email address must contain '@'";
-// }
+    if(blank_check($pass)){     echo "submitted: ".$pass; }else{ echo "can not be empty"; }
+echo "<br>";
+    if(length_check($pass)){    echo "submitted: ".$pass; }else{ echo "must have more than six charechters"; }
+echo "<br>";
+    if(string_check($pass)){    echo "submitted: ".$pass; }else{ echo "must have alphabate"; }
+echo "<br>";
+    if(matching_check($pass)){  echo "submitted: ".$pass; }else{ echo "must not have 123, 4, 1111, 123456789"; }
+echo "<br>";
+    if(special_char($pass)){    echo "submitted: ".$pass; }else{ echo "must have any of @, ^, &, %"; }
 ?>
-<hr>
-<pre>
-    <?php print_r($errors); ?>
-</pre>
-<hr>
-<p class="text-center">
-    <?php
-        check_point("mypaww12456");
-    ?>
-</p>
-<hr>
-
-<br><br><br></div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
