@@ -1,3 +1,6 @@
 <?php
-  echo "I am from c9a a a4";
+$a = "";
+  if(isset($a)){
+      echo "wow";
+  }
 ?>
