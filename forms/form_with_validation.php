@@ -74,7 +74,7 @@
       <ul class="col-sm-6"><p>Password has some issues:</p>
         <li>Password field can not be blank.</li>
         <li>Password should be more than six charecters.</li>
-        <li>Password must not a be: 123456.</li>
+        <li>Password must not be: 123456.</li>
       </ul>
   </div>
   <hr>
